@@ -27,4 +27,10 @@ public class JzOffer47 {
         boolean flag = n > 0 && (n += sumNums(n - 1)) > 0;
         return n;
     }
+
+    public static void main(String[] args) {
+        JzOffer47 instance = new JzOffer47();
+        int i = instance.sumNums(3);
+        System.out.println(i);
+    }
 }
