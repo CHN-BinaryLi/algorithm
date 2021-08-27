@@ -33,6 +33,11 @@ import java.util.PriorityQueue;
 
 public class LeetCode295 {
 
+    //本题的核心：
+    // 1.使用大顶堆与小顶堆，且必须维护"大顶堆的top节点 <= 小顶堆的top节点"
+    // 2.使用某种手段维护两堆的"节点数"满足："差最多不超过1 或相等"
+    // 3.新插入的num要与大顶堆与小顶堆的top进行比较，并在需要交换时候进行交换，避免打破上述 核心1
+
     private PriorityQueue<Integer> minHeap;
     private PriorityQueue<Integer> maxHeap;
     private boolean intoMax = true;
